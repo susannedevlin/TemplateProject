@@ -67,6 +67,7 @@ section h1 {
 }
 
 section.project img {
+    max-width: 100%;
     grid-column: 1 / span 7;
 }
 
