@@ -58,9 +58,8 @@ section h1 {
     /* background-color: red; */
 }
 
-section.project {
-    background-color: red;
-    /* grid-column: 1 / span 4; */
+section.project img {
+    grid-column: 1 / span 8;
 }
 
 footer {
