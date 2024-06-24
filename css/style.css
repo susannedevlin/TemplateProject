@@ -44,7 +44,7 @@ a {
     transition: color 0.3s;
 }
 
-a:hover {
+a:hover, a.selected {
     /* To select a state in css use a colon. This line impacts navs when they're in a hover state */
     color: #f4bcbb;
 }
