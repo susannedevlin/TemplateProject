@@ -67,8 +67,7 @@ section h1 {
 }
 
 section.project div.artwork {
-    max-width: 100%;
-    grid-column: 1 / span 7;
+    grid-column: 1 / span 8;
 }
 
 section.project div.description {
