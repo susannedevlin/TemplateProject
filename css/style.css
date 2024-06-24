@@ -56,6 +56,8 @@ section {
     grid-template-columns: repeat(12, 1fr);
     /* As above, this is the gutter */
     gap: 32px 32px;
+    /* by default, grids will always go to the next line, but if there's space, this will squeeze things in */
+    grid-auto-flow: dense;
 }
 
 section h1 {
@@ -68,6 +70,8 @@ section h1 {
 
 section.project div.artwork {
     grid-column: 1 / span 8;
+    /* text-align is working here for the images */
+    text-align: center;
 }
 
 section.project div.description {
@@ -75,6 +79,20 @@ section.project div.description {
 }
 
 section.project img {
+    max-width: 100%;
+    max-height: 640px;
+}
+
+section.project-alt div.artwork {
+    grid-column: 5 / span 8;
+}
+
+section.project-alt div.description {
+    grid-column: 1 / span 4;
+}
+
+section.project-alt img {
+    max-width: 100%;
     max-height: 640px;
 }
 
