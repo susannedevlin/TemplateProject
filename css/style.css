@@ -66,13 +66,17 @@ section h1 {
     /* background-color: red; */
 }
 
-section.project img {
+section.project div.artwork {
     max-width: 100%;
     grid-column: 1 / span 7;
 }
 
-section.project div {
+section.project div.description {
     grid-column: 9 / span 4;
+}
+
+section.project img {
+    max-height: 640px;
 }
 
 footer {
