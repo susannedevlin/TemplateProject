@@ -96,6 +96,31 @@ section.project-alt img {
     max-height: 640px;
 }
 
+section.about div.photo {
+    grid-column: 1 / span 6;
+}
+
+section.about div.description {
+    grid-column: 7 / span 6;
+}
+
+section.about img {
+    max-width: 100%;
+}
+
+section.about h1 {
+    margin: 0;
+    text-align: left;
+}
+
+section.about p {
+    margin: 16px 0 16px 0;
+}
+
+section.contact div.form {
+    grid-column: 4 / span 6;
+}
+
 footer {
     display: flex;
     /* The below aligns items in the middle of the footer */
