@@ -1,136 +1,177 @@
 body {
-    font-family: Nunito Sans;
-    font-size: 16px;
-    line-height: 1.5;
+  font-family: Nunito Sans;
+  font-size: 16px;
+  line-height: 1.5;
 
-    background-color: #111118;
-    color: #ffffff;
-    margin: 80px auto 48px auto;
-    width: 1120px;
+  background-color: #111118;
+  color: #ffffff;
+  margin: 80px auto 48px auto;
+  width: 1120px;
 }
 
 header {
-    /* We are targetting the 'header' box. We want to give it a flexible layout. */
-    display: flex;
-    /* This is used to align up and down the page */
-    align-items: center;
-    /* this is used to equalize space between itens in the header e.g. the logo and the nav container */
-    justify-content: space-between;
-    /* This can be a row or a column. We're using a row for the header */
-    /* flex-direction: row; */
-
+  /* We are targetting the 'header' box. We want to give it a flexible layout. */
+  display: flex;
+  /* This is used to align up and down the page */
+  align-items: center;
+  /* this is used to equalize space between itens in the header e.g. the logo and the nav container */
+  justify-content: space-between;
+  /* This can be a row or a column. We're using a row for the header */
+  /* flex-direction: row; */
 }
 
-h1, nav, footer {
-    font-family: Josefin Sans;
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 1.2;
+h1,
+nav,
+footer {
+  font-family: Josefin Sans;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.2;
 }
 
 h2 {
-    font-family: Josefin Sans;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 1.3;
-    margin: 0 0 16px 0;
+  font-family: Josefin Sans;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.3;
+  margin: 0 0 16px 0;
 }
-
 
 a {
-    color: #ffffff;
-    text-decoration: none;
-    margin: 0 0 0 32px;
-    transition: color 0.3s;
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 0 0 32px;
+  transition: color 0.3s;
 }
 
-a:hover, a.selected {
-    /* To select a state in css use a colon. This line impacts navs when they're in a hover state */
-    color: #f4bcbb;
+a:hover,
+a.selected {
+  /* To select a state in css use a colon. This line impacts navs when they're in a hover state */
+  color: #f4bcbb;
 }
 
 section {
-    margin: 80px 0 80px 0;
-    display: grid;
-    /* This is based on Figma design. Gutter is 32, Grid is 12 columns, each one is exactly the same hence 1 fr  */
-    grid-template-columns: repeat(12, 1fr);
-    /* As above, this is the gutter */
-    gap: 32px 32px;
-    /* by default, grids will always go to the next line, but if there's space, this will squeeze things in */
-    grid-auto-flow: dense;
+  margin: 80px 0 80px 0;
+  display: grid;
+  /* This is based on Figma design. Gutter is 32, Grid is 12 columns, each one is exactly the same hence 1 fr  */
+  grid-template-columns: repeat(12, 1fr);
+  /* As above, this is the gutter */
+  gap: 32px 32px;
+  /* by default, grids will always go to the next line, but if there's space, this will squeeze things in */
+  grid-auto-flow: dense;
 }
 
 section h1 {
-    /* From Figma, we want this h1 to go across 10 columns and also start at column 2 and span across 10 */
-    grid-column: 2 / span 10;
-    text-align: center;
-    /* Using background colour helps check the alignment and determine which column to start at */
-    /* background-color: red; */
+  /* From Figma, we want this h1 to go across 10 columns and also start at column 2 and span across 10 */
+  grid-column: 2 / span 10;
+  text-align: center;
+  /* Using background colour helps check the alignment and determine which column to start at */
+  /* background-color: red; */
 }
 
 section.project div.artwork {
-    grid-column: 1 / span 8;
-    /* text-align is working here for the images */
-    text-align: center;
+  grid-column: 1 / span 8;
+  /* text-align is working here for the images */
+  text-align: center;
 }
 
 section.project div.description {
-    grid-column: 9 / span 4;
+  grid-column: 9 / span 4;
 }
 
 section.project img {
-    max-width: 100%;
-    max-height: 640px;
+  max-width: 100%;
+  max-height: 640px;
 }
 
 section.project-alt div.artwork {
-    grid-column: 5 / span 8;
+  grid-column: 5 / span 8;
 }
 
 section.project-alt div.description {
-    grid-column: 1 / span 4;
+  grid-column: 1 / span 4;
 }
 
 section.project-alt img {
-    max-width: 100%;
-    max-height: 640px;
+  max-width: 100%;
+  max-height: 640px;
 }
 
 section.about div.photo {
-    grid-column: 1 / span 6;
+  grid-column: 1 / span 6;
 }
 
 section.about div.description {
-    grid-column: 7 / span 6;
+  grid-column: 7 / span 6;
 }
 
 section.about img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 section.about h1 {
-    margin: 0;
-    text-align: left;
+  margin: 0;
+  text-align: left;
 }
 
 section.about p {
-    margin: 16px 0 16px 0;
+  margin: 16px 0 16px 0;
 }
 
 section.contact div.form {
-    grid-column: 4 / span 6;
+  grid-column: 4 / span 6;
 }
 
 footer {
-    display: flex;
-    /* The below aligns items in the middle of the footer */
-    align-items: center;
-    /* The below aligns the content in the middle of the page*/
-    justify-content: center;
+  display: flex;
+  /* The below aligns items in the middle of the footer */
+  align-items: center;
+  /* The below aligns the content in the middle of the page*/
+  justify-content: center;
 }
 
 footer a {
-    /* This overrides the margin in the nav and makes it completely centered */
-    /* We use 16px because it's half and half to equal the 32px in the margin */
+  /* This overrides the margin in the nav and makes it completely centered */
+  /* We use 16px because it's half and half to equal the 32px in the margin */
+  margin: 0 16px 0 16px;
+}
+
+@media (max-width: 1248px) {
+  /* Put media queries at the bottom of css stylesheet so that they override what's on top. *Cascading */
+  /* The code inside the brackets is doing a 'check'. For example, if the screen size is less than 600px */
+  body {
+    width: auto;
+    margin: 80px 64px 48px 64px;
+  }
+
+  h1,
+  nav,
+  footer {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 920px) {
+  header {
+    flex-direction: column;
+  }
+
+  nav {
+    margin: 24px 0 0 0;
+  }
+
+  header img {
+    max-width: 300px;
+  }
+
+  header a {
     margin: 0 16px 0 16px;
+  }
+}
+
+@media (max-width: 660px) {
+  section {
+    grid-template-columns: repeat (4, 1fr);
+    gap: 24px 24px;
+  }
 }
