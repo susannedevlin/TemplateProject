@@ -151,6 +151,18 @@ section.alice-layout div {
   grid-column: 7 / span 6;
 }
 
+section.jaclyn-layout div {
+  grid-column: span 6;
+}
+
+section.jaclyn-layout h2 {
+  margin: 16px 0;
+}
+
+video {
+  max-width: 100%;
+}
+
 footer {
   display: flex;
   /* The below aligns items in the middle of the footer */
