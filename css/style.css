@@ -170,8 +170,41 @@ footer a {
 }
 
 @media (max-width: 660px) {
+  nav a {
+    margin: 8px 0 0 0;
+  }
+
   section {
-    grid-template-columns: repeat (4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 24px 24px;
+    margin: 64px 0 64px;
+  }
+
+  section h1,
+  section.project div.artwork,
+  section.project div.description,
+  section.project-alt div.artwork,
+  section.project-alt div.description,
+  section.about div.photo,
+  section.about div.description,
+  section.contact div.form {
+    grid-column: 1 / span 4;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    margin: 40px 32px 32px 32px;
+  }
+
+  header img {
+    width: 100%;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
