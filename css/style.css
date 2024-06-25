@@ -29,6 +29,14 @@ footer {
   line-height: 1.2;
 }
 
+h1 span {
+  color: #f4bcbb;
+}
+
+h1 span.geometric {
+  color: #077644;
+}
+
 h2 {
   font-family: Josefin Sans;
   font-size: 24px;
@@ -42,12 +50,17 @@ a {
   text-decoration: none;
   margin: 0 0 0 32px;
   transition: color 0.3s;
+  /* variation1 to add underline on links. the transition can be added to above using a comma */
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s;
 }
 
 a:hover,
 a.selected {
   /* To select a state in css use a colon. This line impacts navs when they're in a hover state */
   color: #f4bcbb;
+  /* variation1 to add underline on links */
+  border-bottom: 2px solid #f4bcbb;
 }
 
 section {
@@ -122,6 +135,22 @@ section.contact div.form {
   grid-column: 4 / span 6;
 }
 
+section.contact h1 {
+  text-align: left;
+}
+
+section.alice-layout img {
+  grid-column: 1 / span 12;
+}
+
+section.alice-layout h2 {
+  grid-column: 1 / span 4;
+}
+
+section.alice-layout div {
+  grid-column: 7 / span 6;
+}
+
 footer {
   display: flex;
   /* The below aligns items in the middle of the footer */
@@ -134,6 +163,37 @@ footer a {
   /* This overrides the margin in the nav and makes it completely centered */
   /* We use 16px because it's half and half to equal the 32px in the margin */
   margin: 0 16px 0 16px;
+}
+
+input,
+textarea {
+  width: 100%;
+  background-color: #111118;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  padding: 8px 16px;
+}
+
+label {
+  display: block;
+  margin: 16px 0;
+}
+
+textarea {
+  height: 320px;
+}
+
+button {
+  background-color: salmon;
+  border: none;
+  font-size: 24px;
+  font-family: Josefin Sans;
+  padding: 8px 16px;
+}
+
+input:focus,
+textarea:focus {
+  border: 2px solid salmon;
 }
 
 @media (max-width: 1248px) {
@@ -177,7 +237,7 @@ footer a {
   section {
     grid-template-columns: repeat(4, 1fr);
     gap: 24px 24px;
-    margin: 64px 0 64px;
+    margin: 64px 0 64px 0;
   }
 
   section h1,
