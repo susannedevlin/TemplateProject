@@ -4,19 +4,25 @@ body {
   line-height: 1.5;
 
   background-color: #111118;
+  background-image: url(images/rectangle-gradient.png);
+  background-repeat: repeat-x;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 20px 100%;
+
   color: #ffffff;
   margin: 80px auto 48px auto;
   width: 1120px;
 }
 
-body.about-class {
+/* body.about-class {
   background-color: #111118;
   background-image: url(images/Rectangle10.png);
   background-repeat: repeat-x;
   background-position: center;
   background-attachment: fixed;
   background-size: 20px 100%;
-}
+} */
 
 header {
   /* We are targetting the 'header' box. We want to give it a flexible layout. */
