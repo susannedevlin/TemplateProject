@@ -9,6 +9,15 @@ body {
   width: 1120px;
 }
 
+body.about-class {
+  background-color: #111118;
+  background-image: url(images/Rectangle10.png);
+  background-repeat: repeat-x;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 20px 100%;
+}
+
 header {
   /* We are targetting the 'header' box. We want to give it a flexible layout. */
   display: flex;
@@ -129,15 +138,6 @@ section.about h1 {
 
 section.about p {
   margin: 16px 0 16px 0;
-}
-
-body.about-class {
-  background-color: #111118;
-  background-image: url(images/Rectangle 10.png);
-  background-repeat: repeat-x;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: 20px 100%;
 }
 
 section.contact div.form {
