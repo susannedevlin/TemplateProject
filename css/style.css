@@ -131,6 +131,15 @@ section.about p {
   margin: 16px 0 16px 0;
 }
 
+body.about-class {
+  background-color: #111118;
+  background-image: url(images/Rectangle 10.png);
+  background-repeat: repeat-x;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 20px 100%;
+}
+
 section.contact div.form {
   grid-column: 4 / span 6;
 }
@@ -161,6 +170,11 @@ section.jaclyn-layout h2 {
 
 video {
   max-width: 100%;
+}
+
+/* variation7 - adding rounded corners to images */
+section.project img {
+  border-radius: 15px;
 }
 
 footer {
